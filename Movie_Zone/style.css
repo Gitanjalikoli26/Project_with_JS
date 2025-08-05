@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+button {
+    font-weight: bold !important;
+}
+.main{
+    max-width: 280px;
+    text-align: center;
+}
+.dom_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+}
+
+.hover_effect {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+.hover_effect .img {
+    transition: transform 0.7s ease; /* ✅ fixed typo */
+    transform: translateZ(0); /* optional, safe to leave */
+}
+
+.hover_effect:hover .img {
+    transform: scale(1.1); /* ✅ fixed syntax */
+}
+
+.img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
